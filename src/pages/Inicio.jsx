@@ -1,3 +1,4 @@
+import Card from "../components/Card";
 
 
 const Inicio = () => {
@@ -9,6 +10,7 @@ const Inicio = () => {
 
       <main>
         <section className="cards-container" id="container-productos"></section>
+        <Card />
       </main>
 
       
