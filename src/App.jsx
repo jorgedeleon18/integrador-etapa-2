@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router"
 import Rutas from "./routes/Rutas"
-import Navbar from "./components/navbar"
 import Footer from "./components/footer"
+import Cabecera from "./components/Cabecera"
 
 
 
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <BrowserRouter>
 
-          <Navbar />
+          <Cabecera />
 
           <Rutas />
     

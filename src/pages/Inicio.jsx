@@ -1,11 +1,11 @@
-import Cabecera from "../components/Cabecera";
+
 
 const Inicio = () => {
   return (
     <>
       <div>Inicio</div>
 
-      <Cabecera />
+      
 
       <main>
         <section className="cards-container" id="container-productos"></section>
