@@ -1,4 +1,4 @@
-export const peticionesHttp = async (URL, options) => {
+export const peticionesHttp = async (url, options) => {
 
     try {
 

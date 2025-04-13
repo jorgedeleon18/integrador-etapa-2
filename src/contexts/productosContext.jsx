@@ -1,4 +1,5 @@
 import { useEffect, useState, createContext } from "react";
+import {peticionesHttp} from "../helpers/peticiones-http"
 
 const ProductosContext = createContext();
 
@@ -8,7 +9,7 @@ const ProductosProvider = ({ children }) => {
 
   const getallProductos = async () => {
     try {
-      const prods = await peticionesHttp(url, {}); // Asegurate que esta función exista y esté importada
+      const prods = await peticionesHttp(url, {}); 
       setProductos(prods);
     } catch (error) {
       console.error("[getAllProductos]", error);

@@ -1,16 +1,16 @@
 import './Card.scss'
 
-const Card = () => {
+const Card = ({ producto }) => {
   return (
     <div className="card">
       <article className="card__article">
       <div className="card__image-container">
-        <img className="card__image" src="/imgs/camiseta-argentina-2024.webp" alt="texto foto" />
+        <img className="card__image" src={producto.foto} alt={producto.nombre} />
       </div>
       <div className="card__content">
-        <h2 className="card__heading">Nombre</h2>
+        <h2 className="card__heading">{producto.nombre}</h2>
         <div className="card__description">
-          <p>descripcion</p>
+          <p>{producto.detalles}</p>
         </div>
       </div>        
     </article>

@@ -1,0 +1,72 @@
+{
+    "productos": [
+      {
+        "nombre": "Camiseta Argentina 2025",
+        "foto": "imgs/camiseta-argentina-2024.webp",
+        "detalles": "Inspirada en la pasión y la gloria albiceleste. Diseño clásico con detalles modernos, escudo bordado, tecnología AEROREADY que absorbe la humedad y corte regular para mayor comodidad. Ideal para hinchas y coleccionistas",
+        "precio": 250.5,
+        "stock": "4444",
+        "marca": "Adidas",
+        "categoria": "Camisetas",
+        "id": 1,
+        "envio": false
+      },
+      {
+        "nombre": "Camiseta Argentina sup 2025",
+        "foto": "public/imgs/Camiseta-argentina-suplente-2024.webp",
+        "detalles": "Un diseño audaz que honra la historia con un toque moderno. Color alternativo vibrante, escudo bordado y tecnología AEROREADY que mantiene el cuerpo seco. Corte regular para comodidad total en la cancha o en las tribunas.",
+        "precio": 240.3,
+        "stock": "4",
+        "marca": "Adidas",
+        "categoria": "Camisetas",
+        "id": 2,
+        "envio": true
+      },
+      {
+        "nombre": "Camiseta River Plate 2025",
+        "foto": "public/imgs/Camiseta-River-2025.webp",
+        "detalles": "La Banda Roja, símbolo eterno de grandeza. Diseño tradicional con detalles actualizados, escudo bordado y tejido AEROREADY que ofrece frescura y confort. Ideal para alentar desde el Monumental o llevar el orgullo millonario a todas partes.",
+        "precio": 985,
+        "stock": 4,
+        "marca": "Adidas",
+        "categoria": "Camisetas",
+        "id": 3,
+        "envio": false
+      },
+      {
+        "nombre": "Camiseta Inter Miami 2025",
+        "detalles": "Estilo y ambición en cada costura. El rosa característico con detalles negros, escudo bordado y tecnología que garantiza frescura y comodidad. Diseñada para vivir la pasión del fútbol con el sello de Miami.",
+        "foto": "public/imgs/Inter-Miami-Rosa.webp",
+        "precio": 678,
+        "stock": 7,
+        "marca": "Adidas",
+        "categoria": "Camisetas",
+        "id": 4,
+        "envio": true
+      },
+      {
+        "nombre": "Inter Miami Sup 2025",
+        "detalles": "Elegancia y actitud en negro. Un diseño imponente con detalles rosados, escudo bordado y tecnología AEROREADY que ofrece confort en todo momento. Hecha para destacar dentro y fuera de la cancha.",
+        "foto": "public/imgs/Miami-Suplente-2025.webp",
+        "precio": 1200,
+        "stock": 4,
+        "marca": "Adidas",
+        "categoria": "Camisetas",
+        "id": 5,
+        "envio": true
+      },
+      {
+        "id": 6,
+        "nombre": "Inter Miami alternativa",
+        "precio": 332.22,
+        "stock": 4,
+        "marca": "Adidas",
+        "categoria": "Camisetas",
+        "detalles": "Un guiño al pasado con espíritu moderno. Color verde distintivo, detalles clásicos y escudo bordado en un diseño que combina nostalgia y estilo. Confeccionada con tecnología actual para máxima frescura y comodidad.",
+        "foto": "imgs/Camiseta-Miami-Verde.webp",
+        "envio": true
+      }
+      
+      
+    ]
+  }
