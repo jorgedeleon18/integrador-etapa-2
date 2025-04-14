@@ -1,8 +1,26 @@
-
+import TablaFila from "./TablaFila"
+import './Tabla.scss'
 
 const Tabla = () => {
   return (
-    <div>Tabla</div>
+    <table className="tabla-alta">
+       <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Marca</th>
+            <th>Categoria/</th>
+            <th>Detalles</th>
+            <th>Foto</th>
+            <th>Envío</th>
+            <th>Acciones</th>
+        </tr>
+       </thead>
+<tbody>
+<TablaFila/>
+</tbody>
+    </table>
   )
 }
 
