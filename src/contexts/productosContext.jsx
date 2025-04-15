@@ -34,14 +34,34 @@ try {
   const nuevoEstadoProductos = [...productos, prods]
   setProductos(nuevoEstadoProductos)
 } catch (error) {
+  console.error('[crearProductoContext]', error)
+}
+}
+
+const actualizarProductoContext = (productoAEditar) => {
+
+}
+
+const eliminarProductoContext = async (id) => {
+try {
+  const urlEliminacion = url + id
+  const options = {
+    method:'DELETE'
+  }
+  const prodEliminado = await peticionesHttp(urlEliminacion, options)
+
+  const nuevoEstadoProductos = productos.filter(prod => prod.id !== id)
+  setProductos(nuevoEstadoProductos)
+} catch (error) {
   
 }
 }
 
-
   const data = {
     productos,
-    crearProductoContext
+    crearProductoContext,
+    actualizarProductoContext,
+    eliminarProductoContext
   };
 
   return (
