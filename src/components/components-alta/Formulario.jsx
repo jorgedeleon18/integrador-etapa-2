@@ -4,7 +4,10 @@ import ProductosContext from "../../contexts/productosContext"
 
 const Formulario = () => {
 
-  const { crearProductoContext, productoAEditar, setProductoAEditar } =  useContext(ProductosContext)
+  const { crearProductoContext,
+     productoAEditar, 
+     setProductoAEditar, 
+     actualizarProductoContext } =  useContext(ProductosContext)
 
      const formInicial = {
         id: null,
@@ -26,7 +29,12 @@ const Formulario = () => {
      const [form, setForm] = useState(formInicial)
 
 const handleSubmit = () =>{
-crearProductoContext(form)
+    if(form.id === null){
+        crearProductoContext(form)
+    } else {
+        actualizarProductoContext(form)
+    }
+
 }
 const handleChange = (e) =>{
     const { type, name, checked, value} = e.target

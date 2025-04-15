@@ -39,8 +39,23 @@ try {
 }
 }
 
-const actualizarProductoContext = (productoAEditar) => {
+const actualizarProductoContext = async (productoAEditar) => {
+try {
 
+const options = {
+  method: 'PUT',
+  headers: { 'content-type': 'application/json'},
+  body: JSON.stringify(productoAEditar)
+}
+
+  const urlActualizar = url + productoAEditar.id
+  const productoEditado = await peticionesHttp(url, options)
+
+  const nuevoEstadoProductos = productos.map(prod => prod.id === productoEditado.id ? productoEditado : prod)
+  setProductos(nuevoEstadoProductos)
+} catch (error) {
+  console.error('[actualizarProductoContext]', error)
+}
 }
 
 const eliminarProductoContext = async (id) => {
@@ -54,7 +69,7 @@ try {
   const nuevoEstadoProductos = productos.filter(prod => prod.id !== id)
   setProductos(nuevoEstadoProductos)
 } catch (error) {
-  
+  console.error('[eliminarProductoContext]', error)
 }
 }
 

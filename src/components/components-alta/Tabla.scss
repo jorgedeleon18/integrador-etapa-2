@@ -3,6 +3,8 @@ table.tabla-alta {
 border-collapse: collapse;
 width: 95%;
 margin: 1rem auto;
+overflow-x: auto;
+
     th, td{
         border: 1px solid black;
         padding: 8px;
