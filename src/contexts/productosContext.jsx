@@ -6,6 +6,7 @@ const ProductosContext = createContext();
 const ProductosProvider = ({ children }) => {
   const url = import.meta.env.VITE_BACKEND_PRODUCTOS;
   const [productos, setProductos] = useState(null);
+  const [productoAEditar,setProductoAEditar] = useState(null)
 
   const getallProductos = async () => {
     try {
@@ -61,7 +62,9 @@ try {
     productos,
     crearProductoContext,
     actualizarProductoContext,
-    eliminarProductoContext
+    eliminarProductoContext,
+    productoAEditar,
+    setProductoAEditar
   };
 
   return (

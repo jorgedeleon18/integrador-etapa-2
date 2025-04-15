@@ -1,10 +1,10 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import ProductosContext from "../../contexts/productosContext"
 
 
 const Formulario = () => {
 
-  const { crearProductoContext } =  useContext(ProductosContext)
+  const { crearProductoContext, productoAEditar, setProductoAEditar } =  useContext(ProductosContext)
 
      const formInicial = {
         id: null,
@@ -17,6 +17,11 @@ const Formulario = () => {
         foto:'',
         envio: false
      }
+
+     useEffect(() => {
+       productoAEditar ? setForm(productoAEditar) : setForm(formInicial) 
+     }, [productoAEditar])
+     
 
      const [form, setForm] = useState(formInicial)
 
@@ -32,6 +37,7 @@ const handleChange = (e) =>{
 }
 const handleReset = () =>{
     setForm(formInicial)
+    setProductoAEditar(null)
 }
   return (
     <>

@@ -34,13 +34,14 @@
       "envio": true
     },
     {
-      "id": "b6f3",
-      "nombre": "pc",
-      "precio": "5464",
-      "stock": "5",
-      "categoria": "informatica",
-      "detalle": "",
-      "foto": "",
+      "id": "a372",
+      "nombre": "Camiseta Inter Miami 2025 EDITAD",
+      "detalles": "Estilo y ambición en cada costura. El rosa característico con detalles negros, escudo bordado y tecnología que garantiza frescura y comodidad. Diseñada para vivir la pasión del fútbol con el sello de Miami.",
+      "foto": "public/imgs/Inter-Miami-Rosa.webp",
+      "precio": 678,
+      "stock": 7,
+      "marca": "Adidas",
+      "categoria": "Camisetas",
       "envio": true
     }
   ]
