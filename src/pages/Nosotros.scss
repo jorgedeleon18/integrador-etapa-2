@@ -1,0 +1,38 @@
+.about-us {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  
+    section {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background-color: #fdfdfd;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  
+      h2 {
+        margin-bottom: 0.8rem;
+        color: #2e5635;
+      }
+  
+      p {
+        margin: 0;
+      }
+    }
+  
+    .intro {
+      background-color: #eaf6ef;
+    }
+  
+    .our-mission {
+      background-color: #eef3f1;
+    }
+  
+    .contact-us {
+      background-color: #f9f9f9;
+    }
+  }
+  
