@@ -1,13 +1,48 @@
-table.tabla-alta {
-    border: 1px solid #000000;
-border-collapse: collapse;
-width: 95%;
-margin: 1rem auto;
-overflow-x: auto;
-
-    th, td{
-        border: 1px solid black;
-        padding: 8px;
-        text-align: left;
+.tabla-acciones {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  
+    .btn {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+      &:hover {
+        transform: scale(1.05);
+      }
     }
-}
+  
+    .btn-ver {
+      background-color: #2ecc71; 
+      color: #fff;
+  
+      &:hover {
+        background-color: #27ae60;
+      }
+    }
+  
+    .btn-editar {
+      background-color: #1abc9c; 
+      color: #fff;
+  
+      &:hover {
+        background-color: #16a085;
+      }
+    }
+  
+    .btn-borrar {
+      background-color: #e74c3c;
+      color: #fff;
+  
+      &:hover {
+        background-color: #c0392b;
+      }
+    }
+  }
+  

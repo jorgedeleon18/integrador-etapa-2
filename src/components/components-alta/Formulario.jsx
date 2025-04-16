@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react"
 import ProductosContext from "../../contexts/productosContext"
+import "./Formulario.scss";
 
 
 const Formulario = () => {
@@ -83,8 +84,10 @@ const handleReset = () =>{
             <label htmlFor="lbl-envio">Envío</label>
             <input type="checkbox" id="lbl-envio" name="envio" checked={form.envio} onChange={handleChange}/>
             </div>
-            <button type="submit" >Guardar : Editar</button>
-            <button type="reset" onClick={handleReset}>Limpiar</button>
+            <div className="form-buttons">
+  <button type="submit" className="btn btn-guardar">Guardar</button>
+  <button type="reset" className="btn btn-limpiar" onClick={handleReset}>Limpiar</button>
+</div>
     </form>
     </>
   )
