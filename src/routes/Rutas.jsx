@@ -5,6 +5,7 @@ import Nosotros from "../pages/Nosotros"
 import Contacto from "../pages/Contacto"
 import Carrito from "../pages/Carrito"
 import NoEncontrado from "../pages/NoEncontrado"
+import ProductosDetalle from "../components/ProductosDetalle"
 
 const Rutas = () => {
 
@@ -17,6 +18,14 @@ const Rutas = () => {
             {
                 path: '/alta',
                 element: <Alta />
+            },
+            {
+                path: '/detalle/:id',
+                element: <ProductosDetalle />
+            },
+            {
+                path: '/alta/detalle/:id',
+                element: <ProductosDetalle />
             },
             {
                 path: '/nosotros',
