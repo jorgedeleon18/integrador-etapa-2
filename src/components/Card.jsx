@@ -24,8 +24,9 @@ agregarProductoAlCarritoContext(producto)
         <h2 className="card__heading">{producto.nombre}</h2>
         <div className="card__description">
           <p>{producto.detalles}</p>
-          <button onClick={()=>handleAgregar(producto)}>Agregar</button>
-          <button onClick={()=>handleVerDetalle(producto.id)}>Ver detalle</button>
+          <button className="btn btn-agregar" onClick={() => handleAgregar(producto)}>Agregar</button>
+          <button className="btn btn-ver-detalle">Ver detalle</button>
+
 
         </div>
       </div>        
