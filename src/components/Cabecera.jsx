@@ -1,6 +1,6 @@
 import "./Cabecera.scss";
-import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
+import BarraNavegacion from "./BarraNavegacion";
 
 const Cabecera = ({ filterText, onFilterTextChange }) => {
   return (
@@ -8,7 +8,7 @@ const Cabecera = ({ filterText, onFilterTextChange }) => {
       <header className="main-header">
         <input type="checkbox" id="menu" />
 
-        <Navbar />
+        <BarraNavegacion/>
         <SearchBar
           filterText={filterText}
           onFilterTextChange={onFilterTextChange}

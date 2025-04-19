@@ -2,7 +2,7 @@ import MenuItems from "../constants/MenuItems";
 import "./Navbar.scss";
 import NavItem from "./NavItem";
 
-const Navbar = () => {
+const BarraNavegacion = () => {
   return (
     <nav className="nav-bar">
       <ul className="nav-bar__nav-list">
@@ -14,4 +14,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default BarraNavegacion;
