@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import "./SearchBar.scss";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 const SearchBar = ({ onFilterTextChange, filterText }) => {
   return (
     <div className="search-bar">
