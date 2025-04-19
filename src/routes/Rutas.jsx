@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router";
 import Inicio from "../pages/Inicio";
-import Alta from "../pages/alta";
+import Alta from "../pages/Alta";
 import Nosotros from "../pages/Nosotros";
 import Contacto from "../pages/Contacto";
 import Carrito from "../pages/Carrito";
