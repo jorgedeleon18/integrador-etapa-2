@@ -7,6 +7,8 @@ import Carrito from "../pages/Carrito"
 import NoEncontrado from "../pages/NoEncontrado"
 import ProductosDetalle from "../components/ProductosDetalle"
 
+
+
 const Rutas = () => {
 
     const hookRutas = useRoutes(
@@ -43,6 +45,7 @@ const Rutas = () => {
                 path: '/*',
                 element: <NoEncontrado />
             },
+              
         ]
     )
     return hookRutas

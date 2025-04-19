@@ -1,5 +1,5 @@
 import useTitulo from "../hooks/useTitulo";
-import "./Nosotros.scss";
+import "../components/components-alta/Nosotros.scss";
 
 const Nosotros = () => {
   useTitulo("Nosotros");

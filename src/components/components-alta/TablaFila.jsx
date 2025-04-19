@@ -2,6 +2,7 @@ import { useContext } from "react"
 import ProductosContext from "../../contexts/productosContext"
 import { useNavigate } from "react-router"
 import './Tabla.scss';
+import { Link } from "react-router-dom";
 
 
 
@@ -31,12 +32,13 @@ const handleVer = (id) => {
         <td>{producto.marca}</td>
         <td>{producto.categoria}</td>
         <td>{producto.detalle}</td>
+        
         <td>
             <img src={producto.foto} alt={producto.nombre} style={{width:'60px'}}></img>
         </td>
         <td>{producto.envio ? 'si' : 'no'}</td>
         <td className="tabla-acciones">
-  <button className="btn btn-ver">Ver</button>
+        <Link to={`/detalle/${producto.id}`} className="btn btn-ver">Ver</Link>
   <button className="btn btn-editar" onClick={() => handleEditar(producto)}>Editar</button>
   <button className="btn btn-borrar" onClick={() => handleEliminar(producto.id)}>Borrar</button>
 </td>

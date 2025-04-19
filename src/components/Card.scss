@@ -126,18 +126,25 @@
 }
 
 .btn-agregar {
-  background-color: #a3c29e; // Verde oliva grisáceo
-  color: #2e3d2f;
-
+  background-color:rgb(34, 204, 82);
+  color: white;
+  padding: 5px;
+  display: block;
+  margin: auto;
+margin-top: 10px;
   &:hover {
     background-color: #91b18c;
   }
 }
 
 .btn-ver-detalle {
-  background-color: #f1f0e8;  // Beige suave
-  color: #4d4d4d;
+  background-color: rgb(10, 76, 42);  
+  color: white;
   font-weight: 500;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
 
   &:hover {
     background-color: #e4e2d9;

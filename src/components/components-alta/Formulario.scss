@@ -1,3 +1,38 @@
+.form__alta{
+    padding: 50px;
+    width: 30%;
+    margin: auto;
+
+    &__fieldset {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1.5rem;
+      background-color: #f9f9f9;
+    }
+
+    &__legend {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      color: #2e5635;
+    }
+
+    &__nombre,
+    &__precio,
+    &__stock,
+    &__marca,
+    &__categoria,
+    &__detalles,
+    &__foto,
+    &__envio {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5em;
+      width: 50%;
+      margin: auto;
+    }
+}
 .form-buttons {
     margin-top: 1rem;
     display: flex;

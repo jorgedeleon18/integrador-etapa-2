@@ -12,11 +12,8 @@ const Inicio = () => {
 
   return (
     <>
-      <div>Inicio</div>
-
       
-
-      <main>
+      <main className='main-section-card'>
         <section className="cards-container" id="container-productos">
           {
             productos && productos.map((producto) => (
