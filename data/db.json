@@ -65,6 +65,17 @@
       "detalles": "Un homenaje vibrante al pasado. Corte clásico, colores únicos y esencia retro 100%.",
       "foto": "imgs/Camiseta-Miami-Verde.webp",
       "envio": false
+    },
+    {
+      "id": "f5b0",
+      "nombre": "Camiseta Nueva Argentina sup 2025",
+      "precio": "78899",
+      "stock": "5",
+      "marca": "Adidas",
+      "categoria": "camisetas",
+      "detalles": "buena camiseta",
+      "foto": "imgs/Camiseta-argentina-suplente-2024.webp",
+      "envio": false
     }
   ],
   "carrito": [

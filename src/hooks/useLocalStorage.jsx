@@ -47,4 +47,3 @@ export const useLocalStorage = (clave, valorInicial = []) => {
 
   return [guardarValor, eliminarValor, limpiarValores, valorAlmacenado];
 };
-

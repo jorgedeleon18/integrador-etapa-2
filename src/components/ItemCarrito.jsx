@@ -25,18 +25,27 @@ const ItemCarrito = ({ producto }) => {
         });
       }
     });
-  }; 
+  };
 
   return (
     <tr>
-        <td>
-        <img src={producto.foto} alt={producto.nombre} style={{ width: "60px" }} />
+      <td>
+        <img
+          src={producto.foto}
+          alt={producto.nombre}
+          style={{ width: "60px" }}
+        />
       </td>
       <td>{producto.nombre}</td>
       <td>{producto.cantidad}</td>
       <td>{producto.precio}</td>
       <td>
-        <button className="btn btn-borrar" onClick={() => handleEliminar(producto.id)}>Borrar</button>
+        <button
+          className="btn btn-borrar"
+          onClick={() => handleEliminar(producto.id)}
+        >
+          Borrar
+        </button>
       </td>
       <td>{producto.cantidad * producto.precio}</td>
     </tr>

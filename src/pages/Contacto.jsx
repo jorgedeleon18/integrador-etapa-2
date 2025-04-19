@@ -30,7 +30,9 @@ const Contacto = () => {
             <textarea id="descr" />
           </div>
 
-          <button type="submit" className="main-form__form__button">Enviar</button>
+          <button type="submit" className="main-form__form__button">
+            Enviar
+          </button>
         </fieldset>
       </form>
     </main>

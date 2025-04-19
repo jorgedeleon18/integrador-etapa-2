@@ -3,73 +3,69 @@
 /* ----------------------------- */
 
 .main-header {
-    display: flex;
-    flex-direction: column-reverse;
-  
-    @media screen and (min-width: 992px) {
-      & {
-        flex-direction: column;
-      }
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: 992px) {
+    & {
+      flex-direction: column;
     }
   }
-  
-  #menu {
-    display: none;
-  
-    &:checked + .nav-bar {
-      display: block;
-    }
-    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
-      background-color: #7b9e56;
-    }
-  }
-  
-  
-  
-  
-  /* -------------------------------- */
-  /* MENU TOOGLE                     */
-  /* ------------------------------- */
-  
-  .menu-toogle {
+}
+
+#menu {
+  display: none;
+
+  &:checked + .nav-bar {
     display: block;
-    flex: 0 0 3rem;
-    position: relative;
-    cursor: pointer;
-  
-    &__label {
-      display: block;
-      background-color: #4d6d3e;
-      height: 100%;
-    }
-  
-    &__top-bread,
-    &__meat,
-    &__bottom-bread {
-      display: block;
-      background-color: #333;
-      height: 0.2rem;
-      position: absolute;
-      left: 0.5rem;
-      right: 0.5rem;
-    }
-  
-    &__top-bread {
-      top: 0.8rem;
-    }
-  
-    &__meat {
-      top: 50%;
-      margin-top: -0.1rem;
-    }
-  
-    &__bottom-bread {
-      bottom: 0.8rem;
-    }
-    @media screen and (min-width: 992px) {
-      & {
-        display: none;
-      }
+  }
+  &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+    background-color: #7b9e56;
+  }
+}
+
+/* -------------------------------- */
+/* MENU TOOGLE                     */
+/* ------------------------------- */
+
+.menu-toogle {
+  display: block;
+  flex: 0 0 3rem;
+  position: relative;
+  cursor: pointer;
+
+  &__label {
+    display: block;
+    background-color: #4d6d3e;
+    height: 100%;
+  }
+
+  &__top-bread,
+  &__meat,
+  &__bottom-bread {
+    display: block;
+    background-color: #333;
+    height: 0.2rem;
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+  }
+
+  &__top-bread {
+    top: 0.8rem;
+  }
+
+  &__meat {
+    top: 50%;
+    margin-top: -0.1rem;
+  }
+
+  &__bottom-bread {
+    bottom: 0.8rem;
+  }
+  @media screen and (min-width: 992px) {
+    & {
+      display: none;
     }
   }
-  
+}

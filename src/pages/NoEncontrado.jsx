@@ -1,8 +1,5 @@
-
 const NoEncontrado = () => {
-  return (
-    <div>NoEncontrado</div>
-  )
-}
+  return <div>NoEncontrado</div>;
+};
 
-export default NoEncontrado
+export default NoEncontrado;

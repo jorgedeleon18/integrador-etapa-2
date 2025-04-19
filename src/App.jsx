@@ -1,25 +1,20 @@
-import { BrowserRouter } from "react-router"
-import Rutas from "./routes/Rutas"
-import Footer from "./components/footer"
-import Cabecera from "./components/Cabecera"
-import { useState } from "react"
-
-
-
+import { BrowserRouter } from "react-router";
+import Rutas from "./routes/Rutas";
+import Footer from "./components/footer";
+import Cabecera from "./components/Cabecera";
+import { useState } from "react";
 
 const App = () => {
-  const [filterText, setFilterText] = useState("")
+  const [filterText, setFilterText] = useState("");
   return (
     <BrowserRouter>
+      <Cabecera filterText={filterText} onFilterTextChange={setFilterText} />
 
-          <Cabecera filterText={filterText} onFilterTextChange={setFilterText} />
+      <Rutas filterText={filterText} />
 
-          <Rutas filterText={filterText}/>
-    
-          <Footer />
-
+      <Footer />
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;

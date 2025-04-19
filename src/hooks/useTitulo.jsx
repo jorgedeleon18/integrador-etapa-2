@@ -1,11 +1,9 @@
-import { useEffect } from "react"
+import { useEffect } from "react";
 
-
-const useTitulo = ( textoTitulo = 'Sin título' ) => {
+const useTitulo = (textoTitulo = "Sin título") => {
   useEffect(() => {
-    document.title = `Educación IT - ${textoTitulo}`
-  }, [])
-  
-}
+    document.title = `Educación IT - ${textoTitulo}`;
+  }, []);
+};
 
-export default useTitulo
+export default useTitulo;
