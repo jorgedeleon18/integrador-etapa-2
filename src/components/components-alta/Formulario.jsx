@@ -28,16 +28,20 @@ const Formulario = () => {
   }, [productoAEditar]);
 
   const [form, setForm] = useState(formInicial);
-const [foto,setFoto] = useState('http://localhost:8080/uploads/placeholderimagen.webp')
-const [srcImagenBack, setSrcImagenBack] = useState('http://localhost:8080/uploads/placeholderimagen.webp')
+
+  const placeHolderImagen =
+    "http://localhost:8080/uploads/placeholderimagen.webp";
+  const [foto, setFoto] = useState({ foto: placeHolderImagen });
+  const [srcImagenBack, setSrcImagenBack] = useState(placeHolderImagen);
 
   const handleSubmit = () => {
     if (form.id === null) {
-      const productoNuevoConImagen = {...form, ...foto}
+      const productoNuevoConImagen = { ...form, ...foto };
       crearProductoContext(productoNuevoConImagen);
     } else {
-const productoNuevoConImagen = {...form, ...foto}
-      actualizarProductoContext(productoNuevoConImagen)    }
+      const productoNuevoConImagen = { ...form, ...foto };
+      actualizarProductoContext(productoNuevoConImagen);
+    }
   };
   const handleChange = (e) => {
     const { type, name, checked, value } = e.target;
@@ -49,6 +53,8 @@ const productoNuevoConImagen = {...form, ...foto}
   const handleReset = () => {
     setForm(formInicial);
     setProductoAEditar(null);
+    setFoto({ foto: placeHolderImagen });
+    setSrcImagenBack(placeHolderImagen);
   };
   return (
     <>
@@ -116,21 +122,12 @@ const productoNuevoConImagen = {...form, ...foto}
               onChange={handleChange}
             />
           </div>
-          <div className="form__alta__foto">
-            <label htmlFor="lbl-foto">Foto</label>
-            <input
-              type="text"
-              id="lbl-foto"
-              name="foto"
-              value={form.foto}
-              onChange={handleChange}
-            />
-          </div>
           <div>
-            <DragDrop 
-            setFoto={setFoto}
-             srcImagenBack={srcImagenBack} 
-             setSrcImagenBack={setSrcImagenBack}/>
+            <DragDrop
+              setFoto={setFoto}
+              srcImagenBack={srcImagenBack}
+              setSrcImagenBack={setSrcImagenBack}
+            />
           </div>
           <div className="form__alta__envio">
             <label htmlFor="lbl-envio">Envío</label>
