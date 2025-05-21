@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import ProductosContext from "../../contexts/productosContext";
 import "./Formulario.scss";
+import DragDrop from "./DragDrop";
 
 const Formulario = () => {
   const {
@@ -27,13 +28,16 @@ const Formulario = () => {
   }, [productoAEditar]);
 
   const [form, setForm] = useState(formInicial);
+const [foto,setFoto] = useState('http://localhost:8080/uploads/placeholderimagen.webp')
+const [srcImagenBack, setSrcImagenBack] = useState('http://localhost:8080/uploads/placeholderimagen.webp')
 
   const handleSubmit = () => {
     if (form.id === null) {
-      crearProductoContext(form);
+      const productoNuevoConImagen = {...form, ...foto}
+      crearProductoContext(productoNuevoConImagen);
     } else {
-      actualizarProductoContext(form);
-    }
+const productoNuevoConImagen = {...form, ...foto}
+      actualizarProductoContext(productoNuevoConImagen)    }
   };
   const handleChange = (e) => {
     const { type, name, checked, value } = e.target;
@@ -121,6 +125,12 @@ const Formulario = () => {
               value={form.foto}
               onChange={handleChange}
             />
+          </div>
+          <div>
+            <DragDrop 
+            setFoto={setFoto}
+             srcImagenBack={srcImagenBack} 
+             setSrcImagenBack={setSrcImagenBack}/>
           </div>
           <div className="form__alta__envio">
             <label htmlFor="lbl-envio">Envío</label>

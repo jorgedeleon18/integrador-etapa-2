@@ -23,17 +23,6 @@
       "envio": false
     },
     {
-      "id": "3",
-      "nombre": "Camiseta River Plate 2025",
-      "precio": 110000,
-      "stock": "2",
-      "marca": "Adidas",
-      "categoria": "camisetas",
-      "detalles": "La banda que nunca se borra. Corte entallado, tecnología AEROREADY y orgullo millonario.",
-      "foto": "imgs/Camiseta-River-2025.webp",
-      "envio": false
-    },
-    {
       "id": "4",
       "nombre": "Camiseta Inter Miami 2025",
       "precio": 115000,

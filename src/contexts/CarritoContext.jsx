@@ -39,6 +39,12 @@ const CarritoProvider = ({ children }) => {
 
   const guardarCarritoBackendContext = async () => {
     try {
+
+const dataCarrito = {
+  cantidad: carrito.lenght,
+  carrito
+}
+
       const options = {
         method: "POST",
         headers: { "content-type": "application/json" },
