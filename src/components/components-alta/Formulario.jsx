@@ -30,7 +30,7 @@ const Formulario = () => {
   const [form, setForm] = useState(formInicial);
 
   const placeHolderImagen =
-    "http://localhost:8080/uploads/placeholderimagen.webp";
+    "https://raw.githubusercontent.com/jorgedeleon18/integrador-etapa-3/refs/heads/main/public/uploads/placeholderimage.webp";
   const [foto, setFoto] = useState({ foto: placeHolderImagen });
   const [srcImagenBack, setSrcImagenBack] = useState(placeHolderImagen);
 
